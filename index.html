@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <main>
+        <h1>Create Account</h1>
+        <div class="social-media">
+            <a href="#"><img src="assets/google.png" alt="Google"></a>
+            <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+        </div>
+
+        <div class="alternative">
+            <span>OR</span>
+        </div>
+
+        <form action="login.php" method="post">            
+            <label for="email">
+                <span>Login</span>
+                <input type="text" name="username" value="<?php echo $submitted_username; ?>" >
+            </label>
+
+            <label for="password">
+                <span>Password</span>
+                <input type="password" value="Login" id="password" name="password">
+            </label>
+
+            <input type="submit" value="Login">
+        </form>
+        <a href="register.php">Register</a>
+    </main>
+    <section class="images">
+        <img src="assets/mobile.svg" alt="Mobile">
+
+        <div class="circle">
+
+        </div>
+    </section>
+</body>
+</html>
